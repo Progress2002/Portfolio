@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+  header, #header_content{
+    background: #3C3A39;
+  }
+
+  header{
+    height: 92px;
+  }
+
+  #header_content{
+      position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+  }
+
+  #logo{
+    margin-left: 10px;
+    font-size: 23px;
+    font-family:"Roboto", sans-serif ;
+    font-weight: 700;
+  }
+
+  nav{
+    font-size: 23px;
+    margin-right: 30px;
+  }
+}
