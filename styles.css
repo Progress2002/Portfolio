@@ -48,19 +48,7 @@ body {
   #main {
     background-color: #1c1a19;
     padding: 130px 25px 150px;
-    background-image:
-      url("images/Vector\ \(1\).png"),
-      url("images/Vector\ \(2\).png"),
-      url("images/Vector\ \(3\).png"),
-      url("images/Vector\ \(4\).png"),
-      url("images/Vector\ \(6\).png"),
-      url("images/Vector\ \(5\).png"),
-      url("images/Vector\ \(7\).png"),
-      url("images/Vector\(8\).png"),
-      url("images/Vector\ \(9\).png"),
-      url("images/Vector\ \(10\).png"),
-      url("images/Vector\ \(11\).png"),
-      url("images/Vector\ \(12\).png");
+    background-image: url("images/illustration-header-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom  right;
   }
