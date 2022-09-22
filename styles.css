@@ -1,11 +1,12 @@
-body{
+body {
   margin: 0;
   box-sizing: border-box;
 }
 
 @media (min-width: 320px) {
-  header, #header_content {
-    background: #3C3A39;
+  header,
+  #header_content {
+    background: #3c3a39;
   }
 
   header {
@@ -13,10 +14,10 @@ body{
   }
 
   #header_content {
-      position: fixed;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    color: #ffffff;
+    color: #fff;
     align-items: center;
     height: 80px;
     width: 100%;
@@ -25,7 +26,7 @@ body{
   #logo {
     margin-left: 10px;
     font-size: 23px;
-    font-family:"Roboto", sans-serif ;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
   }
 
@@ -35,14 +36,14 @@ body{
   }
 
   #main {
-    background-color: #1C1A19;
+    background-color: #1c1a19;
     padding: 120px 25px;
   }
 
   h1 {
     font-size: 54px;
-    font-family:'Crete Round', sans-serif;
-    color: #FF6B00;
+    font-family: 'Crete Round', sans-serif;
+    color: #ff6b00;
     margin-top: 0;
     width: 330px;
     margin-bottom: 10px;
@@ -50,29 +51,29 @@ body{
   }
 
   #main h2 {
-    color: #FFF5E1;
+    color: #fff5e1;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
   }
 
   #main p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    color: #fff;
   }
 
   .icons {
-    color: #DBD8D7;
+    color: #dbd8d7;
     font-size: 20px;
     width: 17.99px;
     margin: 0 10px;
   }
 
-  .mail-icon{
+  .mail-icon {
     text-decoration: none;
   }
 }
