@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Project Name 
-# Portfolio 
+# Project Name 
+ Portfolio 
 
 > Description of the poject
  This project is an amaizing  project as it contains list of awesom applications I have built in receent times.
@@ -16,9 +16,9 @@
 ## Live Demo (if available)
 
 - Gain access this awesom project by :
-- heading ovee to "https://github.com/Progress2002/Portfolio" to view the Github repo.
-- Forking it to your Github account (You can aswell "clone" it to your local machine )
-And their you have it all running in your local machine
+- heading over to "https://github.com/Progress2002/Portfolio" to view the Github repo.
+- Forking it to your Github account (You can as well "clone" it to your local machine )
+And there you have it all running in your local machine 😎
 
 
 ## Getting Started
