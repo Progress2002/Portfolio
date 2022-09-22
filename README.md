@@ -2,18 +2,18 @@
 
 # Project Name
 
-> Description the project.
+> Portfolio
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages: HTML & CSS
+- Frameworks (none)
+- Technologies used (git & Github, Linters)
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://github.com/Progress2002/Portfolio)
 
 
 ## Getting Started
@@ -38,19 +38,13 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## Authors
+## Author
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Progress2002)
+- Twitter: [@twitterhandle](https://twitter.com/Progress_2002)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/progress-ezeamaka-27b114247)
 
 ## 🤝 Contributing
 
