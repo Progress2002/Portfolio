@@ -48,6 +48,21 @@ body {
   #main {
     background-color: #1c1a19;
     padding: 130px 25px 150px;
+    background-image:
+      url("images/Vector\ \(1\).png"),
+      url("images/Vector\ \(2\).png"),
+      url("images/Vector\ \(3\).png"),
+      url("images/Vector\ \(4\).png"),
+      url("images/Vector\ \(6\).png"),
+      url("images/Vector\ \(5\).png"),
+      url("images/Vector\ \(7\).png"),
+      url("images/Vector\(8\).png"),
+      url("images/Vector\ \(9\).png"),
+      url("images/Vector\ \(10\).png"),
+      url("images/Vector\ \(11\).png"),
+      url("images/Vector\ \(12\).png");
+    background-repeat: no-repeat;
+    background-position: bottom  right;
   }
 
   h1 {
@@ -74,6 +89,12 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #fff;
+  }
+
+  .social-media {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
   }
 
   .icons {
