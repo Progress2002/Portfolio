@@ -1,19 +1,24 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+## Project Name 
+# Portfolio 
 
-> Description the project.
-
+> Description of the poject
+ This project is an amaizing  project as it contains list of awesom applications I have built in receent times.
+ Go ahead and check it out and don't hesitate to reach out to me if you would love somthing as cool as that on your Website or would want to build a website .
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages: HTML & CSS
+- Frameworks (none)
+- Technologies used (git & Github, Linters)
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+- Gain access this awesom project by :
+- heading ovee to "https://github.com/Progress2002/Portfolio" to view the Github repo.
+- Forking it to your Github account (You can aswell "clone" it to your local machine )
+And their you have it all running in your local machine
 
 
 ## Getting Started
@@ -38,19 +43,13 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## Authors
+## Author
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Progress2002)
+- Twitter: [@twitterhandle](https://twitter.com/Progress_2002)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/progress-ezeamaka-27b114247)
 
 ## 🤝 Contributing
 
