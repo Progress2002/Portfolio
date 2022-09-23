@@ -1,9 +1,23 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  background-color: #091E42;
 }
 
-@media (min-width: 320px) {
+ul{
+  padding-left: 0;
+  list-style-type: none
+}
+
+@media (max-width: 767px) {
+
+  body{
+    background-color: #fff;
+  }
+  p {
+    line-height: 24px;
+  }
+
   header,
   #header_content {
     background: #3c3a39;
@@ -100,5 +114,133 @@ body {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 23px;
+  }
+
+  #work {
+    width: 87%;
+    margin: auto;
+    padding: 80px 0;
+  }
+
+  .work-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-title  h2 {
+    font-family: 'Crete Round',sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  hr {
+    color: #212121;
+    border-bottom: none;
+    margin-bottom: 70px;
+  }
+
+  #work-content {
+    display: grid;
+    grid-template-rows: ifr;
+    grid-template-columns: 1fr;
+  }
+
+  .pr-1 img {
+    width: 100%;
+  }
+
+  .pr-1 h3 {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    color: #091E42;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 15px;
+  }
+
+  .project p {
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .pr-1 p {
+    color: #091E42;
+  }
+
+  .project ul {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+  }
+
+  .project li {
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    color: #091E42;
+    border: 1px solid #8993A4;
+  }
+
+  .bg-img {
+    padding-top: 58px;
+    background-image: url("images/Img\ Placeholder\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+  }
+
+  .bg-img .body-content {
+    padding: 0 20px 15px;
+    margin-right: 0;
+  }
+
+  .bg-img h3 {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .bg-img p,
+  h3,
+  button {
+    color: #fff;
+  }
+
+  button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    background: #FF6B00;
+    border: none;
+    padding: 13px;
+  }
+
+  .pr-1 button {
+    margin-top: 15px;
+  }
+
+  .bg-img button {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .bg-img ul {
+    width: 75%;
+  }
+
+  .bg-img li {
+    color: #fff;
+    border: none;
+    background: rgba(255, 255, 255, 0.24);
   }
 }
