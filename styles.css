@@ -220,6 +220,17 @@ ul {
     padding: 13px;
   }
 
+  button:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  button:disabled {
+    background: #f4f1f0;
+    color: #5b5957;
+  }
+
   .pr-1 button {
     margin-top: 15px;
   }
@@ -227,6 +238,11 @@ ul {
   .bg-img button {
     width: 100%;
     margin-top: 24px;
+  }
+
+  button:enabled {
+    background-color: #f55800;
+    color: #ffff;
   }
 
   .bg-img ul {
