@@ -162,6 +162,16 @@ ul {
     width: 100%;
   }
 
+  article > h3 {
+    color: #172b4d;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
+
   .bg-img h3 {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -183,6 +193,10 @@ ul {
     display: flex;
     width: 85%;
     justify-content: space-between;
+  }
+
+  ul > li {
+    padding: 1rem 0;
   }
 
   .project li {
@@ -218,6 +232,7 @@ ul {
     background: #ff6b00;
     border: none;
     padding: 13px;
+    cursor: pointer;
   }
 
   button:disabled {
@@ -328,5 +343,67 @@ ul {
 
   .list-3 h4::before {
     content: "🟠";
+  }
+
+  footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 3rem 1rem 0 1rem;
+    flex-direction: column;
+    position: relative;
+  }
+
+  article {
+    width: 100%;
+    margin: 3rem 0;
+    overflow: hidden;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 1rem 0.5rem;
+  }
+
+  ul > li > input {
+    border-bottom: 1px solid #dbd8d7;
+  }
+
+  form textarea {
+    background-color: #fbf8f7;
+    height: 114px;
+    width: 327px;
+  }
+
+  form .btn {
+    text-align: center;
+  }
+
+  footer .social-media {
+    justify-content: center;
+    border-top: 1px solid #dfe1e6;
+    color: #505f79;
+  }
+
+  footer .social-media .icons {
+    color: #505f79;
+  }
+
+  footer .social-media::after {
+    content: " ";
+    position: absolute;
+    width: 134px;
+    height: 5px;
+    background: #0d151e;
+    border-radius: 10px;
+    bottom: 10px;
   }
 }
