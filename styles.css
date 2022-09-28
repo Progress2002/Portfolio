@@ -214,7 +214,7 @@ ul > li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 30px 0 ;
+  margin: 30px 0;
   padding-bottom: 0;
 }
 
@@ -301,7 +301,7 @@ button:hover {
   line-height: 24px;
 }
 
-.about-description{
+.about-description {
   padding: 0 25px;
 }
 
