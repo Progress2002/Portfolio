@@ -46,10 +46,6 @@ header {
   font-size: 24px;
 }
 
-#logo a:hover {
-  text-decoration: underline;
-}
-
 .nav-icon {
   font-size: 23px;
   margin-right: 30px;
@@ -127,10 +123,6 @@ button {
   font-size: 20px;
   width: 17.99px;
   margin: 0 10px;
-}
-
-.icons:hover {
-  color: gray;
 }
 
 .mail-icon {
@@ -420,7 +412,8 @@ footer .social-media::after {
 
 @media (min-width: 768px) {
   button,
-  #nav-links li {
+  #nav-links li,
+  footer .social-media .icons {
     transition: all 0.3s linear;
   }
 
@@ -457,11 +450,6 @@ footer .social-media::after {
     bottom: 2px;
   }
 
-  /* #nav-links li a:hover {
-    text-decoration: underline;
-    color: #b7c1d3;
-  } */
-
   #main {
     display: flex;
     flex-direction: row-reverse;
@@ -472,6 +460,20 @@ footer .social-media::after {
 
   #main-article {
     margin: 0 30px;
+    animation-name: slidein;
+    animation-duration: 2s;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 2%;
+      width: 100%;
+    }
   }
 
   h1 {
@@ -504,6 +506,19 @@ footer .social-media::after {
     margin-bottom: 0;
   }
 
+  footer .social-media li:hover .icons {
+    background-color: #f55800;
+    color: #fff;
+    border: none;
+  }
+
+  .social-media li:hover .icons {
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 4px 6px;
+  }
+
   #main .social-media {
     flex-direction: column;
   }
@@ -514,6 +529,11 @@ footer .social-media::after {
 
   #main .social-media li {
     padding: 10px;
+    transition: all 0.3s linear;
+  }
+
+  #main .social-media li:hover {
+    transform: translateX(4px);
   }
 
   #work,
