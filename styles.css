@@ -104,7 +104,6 @@ button {
 }
 
 #main p {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -214,6 +213,11 @@ ul > li {
   background-repeat: no-repeat;
   margin: 30px 0;
   padding-bottom: 0;
+  transition: all 0.4s linear;
+}
+
+.bg-img:hover {
+  box-shadow: 8px 10px 10px rgb(122, 117, 117);
 }
 
 .bg-img .body-content {
@@ -360,7 +364,7 @@ footer {
 
 article {
   width: 100%;
-  margin: 3rem 0;
+  margin: 3rem 0 8;
   overflow: hidden;
 }
 
@@ -621,12 +625,14 @@ footer .social-media::after {
     margin: 8px;
     padding-bottom: 0;
     height: 450px;
+    transition: all 0.7s linear;
   }
 
   .bg-img:hover {
     cursor: pointer;
-    border: 1px solid #091a42;
+    border: 1px solid #b8c1d4;
     background-image: url("images/Img\ Placeholder\ \(2\).png");
+    box-shadow: 6px 8px 4px rgb(122, 117, 117);
   }
 
   .btn-desktop .body-content {
