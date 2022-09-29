@@ -170,7 +170,8 @@ hr {
   display: none;
 }
 
-article > h3 {
+
+.footer-body {
   color: #172b4d;
   font-style: normal;
   font-weight: 700;
@@ -311,6 +312,7 @@ button:hover {
 
 .about-btn {
   margin-left: 25px;
+  margin-top: 30px;
 }
 
 #tools {
@@ -503,7 +505,8 @@ footer .social-media::after {
   }
 
   #work,
-  #about-content {
+  #about-content,
+  .footer-content {
     width: 87%;
   }
 
@@ -692,5 +695,39 @@ footer .social-media::after {
   .list-1 {
     position: relative;
     bottom: 75px;
+  }
+
+  .footer-content {
+    margin: 50px auto 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-body {
+    width: 400px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: left;
+  }
+  footer h3 {
+    text-align: left;
+  }
+
+  form{
+    width: 65%;
+  }
+
+  footer .social-media::after {
+    display: none;
+  }
+
+  footer .social-media {
+    margin-bottom: 0;
+  }
+
+  form .btn {
+    text-align: left;
   }
 }
