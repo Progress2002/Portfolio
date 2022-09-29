@@ -166,6 +166,10 @@ hr {
   width: 100%;
 }
 
+.img-desktop {
+  display: none;
+}
+
 article > h3 {
   color: #172b4d;
   font-style: normal;
@@ -486,6 +490,10 @@ footer .social-media::after {
     flex-direction: column;
   }
 
+  #tools li {
+    text-align: left;
+  }
+
   #main .social-media li {
     padding: 10px;
   }
@@ -494,7 +502,8 @@ footer .social-media::after {
     background-color: #e5e5e5;
   }
 
-  #work {
+  #work,
+  #about-content {
     width: 87%;
   }
 
@@ -507,6 +516,14 @@ footer .social-media::after {
 
   .work-title .text {
     width: 240px;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
   }
 
   .horizontal-line {
@@ -626,5 +643,54 @@ footer .social-media::after {
 
   .btn-desktop button {
     display: none;
+  }
+
+  #about {
+    background-image: url("images/illustration-about\ me@2x.png");
+    background-repeat: no-repeat;
+    background-position: top 80px right;
+    background-size: 500px;
+  }
+
+  #about .body {
+    padding-bottom: 0;
+    background-image: none;
+    margin-bottom: 80px;
+  }
+
+  #about .about-description,
+  #about h1 {
+    text-align: left;
+  }
+
+  #about .about-description {
+    padding-left: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 590px;
+    margin-bottom: 30px;
+  }
+
+  #about .about-description,
+  #about button {
+    margin-left: 0;
+  }
+
+  #about-content hr {
+    margin-bottom: 100px;
+  }
+
+  #tools {
+    display: flex;
+    flex-direction: row;
+    align-items: none;
+    justify-content: space-between;
+    margin-right: 280px;
+  }
+
+  .list-1 {
+    position: relative;
+    bottom: 75px;
   }
 }
