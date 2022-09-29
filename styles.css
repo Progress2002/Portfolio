@@ -20,7 +20,7 @@ header,
 }
 
 header {
-  height: 82px;
+  height: 65px;
 }
 
 #header_content {
@@ -29,7 +29,7 @@ header {
   justify-content: space-between;
   color: #fff;
   align-items: center;
-  height: 80px;
+  height: 60px;
   width: 100%;
   z-index: 1;
 }
@@ -593,6 +593,26 @@ footer .social-media::after {
   .bg-img:hover {
     cursor: pointer;
     border: 1px solid #091a42;
+    background-image: url("images/Img\ Placeholder\ \(2\).png");
+  }
+
+  .btn-desktop .body-content {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .bg-img:hover .body-content {
+    display: none;
+  }
+
+  .btn-desktop button {
+    display: none;
+  }
+
+  .bg-img:hover button {
+    display: block;
+    position: absolute;
+    bottom: 0;
   }
 
   .bg-img ul {
@@ -601,16 +621,7 @@ footer .social-media::after {
 
   .pr-2 {
     position: relative;
-    background-image: url("images/Img\ Placeholder\ \(2\).png");
-  }
-
-  .pr-2 button {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .pr-2 .body-content {
-    display: none;
+    background-image: url("images/Img\ Placeholder\ \(1\).png");
   }
 
   .pr-3 {
@@ -637,18 +648,9 @@ footer .social-media::after {
     position: relative;
   }
 
-  .btn-desktop .body-content {
-    position: absolute;
-    bottom: 10px;
-  }
-
   .btn-desktop h3,
   .btn-desktop p {
     margin-bottom: 22px;
-  }
-
-  .btn-desktop button {
-    display: none;
   }
 
   #about {
