@@ -239,7 +239,6 @@ button {
   border: none;
   padding: 13px;
   cursor: pointer;
-  transition: all 0.2s linear;
 }
 
 button:disabled {
@@ -420,6 +419,11 @@ footer .social-media::after {
 }
 
 @media (min-width: 768px) {
+  button,
+  #nav-links li {
+    transition: all 0.3s linear;
+  }
+
   #header_content {
     padding: 0 90px;
   }
@@ -433,10 +437,18 @@ footer .social-media::after {
     color: #fff;
   }
 
+  #nav-links li:hover {
+    transform: translateY(-4px);
+  }
+
   #nav-links li a {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
+  }
+
+  #nav-links li:hover a {
+    font-weight: 500;
   }
 
   #nav-links li:nth-child(4) a {
@@ -445,10 +457,10 @@ footer .social-media::after {
     bottom: 2px;
   }
 
-  #nav-links li a:hover {
+  /* #nav-links li a:hover {
     text-decoration: underline;
     color: #b7c1d3;
-  }
+  } */
 
   #main {
     display: flex;
