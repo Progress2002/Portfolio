@@ -170,7 +170,6 @@ hr {
   display: none;
 }
 
-
 .footer-body {
   color: #172b4d;
   font-style: normal;
@@ -488,6 +487,10 @@ footer .social-media::after {
     color: #f4f5f7;
   }
 
+  footer .social-media {
+    margin-bottom: 0;
+  }
+
   #main .social-media {
     flex-direction: column;
   }
@@ -562,6 +565,10 @@ footer .social-media::after {
 
   .pr-1 .body {
     width: 40%;
+  }
+
+  footer h3 {
+    text-align: left;
   }
 
   .pr-1 h3 {
@@ -711,20 +718,13 @@ footer .social-media::after {
     color: #262626;
     text-align: left;
   }
-  footer h3 {
-    text-align: left;
-  }
 
-  form{
+  form {
     width: 65%;
   }
 
   footer .social-media::after {
     display: none;
-  }
-
-  footer .social-media {
-    margin-bottom: 0;
   }
 
   form .btn {
