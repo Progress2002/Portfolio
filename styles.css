@@ -46,10 +46,6 @@ header {
   font-size: 24px;
 }
 
-#logo a:hover {
-  text-decoration: underline;
-}
-
 .nav-icon {
   font-size: 23px;
   margin-right: 30px;
@@ -108,7 +104,6 @@ button {
 }
 
 #main p {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -127,10 +122,6 @@ button {
   font-size: 20px;
   width: 17.99px;
   margin: 0 10px;
-}
-
-.icons:hover {
-  color: gray;
 }
 
 .mail-icon {
@@ -222,6 +213,11 @@ ul > li {
   background-repeat: no-repeat;
   margin: 30px 0;
   padding-bottom: 0;
+  transition: all 0.4s linear;
+}
+
+.bg-img:hover {
+  box-shadow: 8px 10px 10px rgb(122, 117, 117);
 }
 
 .bg-img .body-content {
@@ -368,7 +364,7 @@ footer {
 
 article {
   width: 100%;
-  margin: 3rem 0;
+  margin: 3rem 0 8;
   overflow: hidden;
 }
 
@@ -419,6 +415,12 @@ footer .social-media::after {
 }
 
 @media (min-width: 768px) {
+  button,
+  #nav-links li,
+  footer .social-media .icons {
+    transition: all 0.3s linear;
+  }
+
   #header_content {
     padding: 0 90px;
   }
@@ -432,21 +434,28 @@ footer .social-media::after {
     color: #fff;
   }
 
+  #tools li {
+    text-align: left;
+  }
+
+  #nav-links li:hover {
+    transform: translateY(-4px);
+  }
+
   #nav-links li a {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
   }
 
+  #nav-links li:hover a {
+    font-weight: 500;
+  }
+
   #nav-links li:nth-child(4) a {
     font-size: 12px;
     position: relative;
     bottom: 2px;
-  }
-
-  #nav-links li a:hover {
-    text-decoration: underline;
-    color: #b7c1d3;
   }
 
   #main {
@@ -459,6 +468,20 @@ footer .social-media::after {
 
   #main-article {
     margin: 0 30px;
+    animation-name: slidein;
+    animation-duration: 2s;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 2%;
+      width: 100%;
+    }
   }
 
   h1 {
@@ -491,16 +514,30 @@ footer .social-media::after {
     margin-bottom: 0;
   }
 
+  .social-media li:hover .icons {
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 4px 6px;
+  }
+
+  footer .social-media li:hover .icons {
+    background-color: #f55800;
+    color: #fff;
+    border: none;
+  }
+
   #main .social-media {
     flex-direction: column;
   }
 
-  #tools li {
-    text-align: left;
-  }
-
   #main .social-media li {
     padding: 10px;
+    transition: all 0.3s linear;
+  }
+
+  #main .social-media li:hover {
+    transform: translateX(4px);
   }
 
   #work,
@@ -588,12 +625,14 @@ footer .social-media::after {
     margin: 8px;
     padding-bottom: 0;
     height: 450px;
+    transition: all 0.7s linear;
   }
 
   .bg-img:hover {
     cursor: pointer;
-    border: 1px solid #091a42;
+    border: 1px solid #b8c1d4;
     background-image: url("images/Img\ Placeholder\ \(2\).png");
+    box-shadow: 6px 8px 4px rgb(122, 117, 117);
   }
 
   .btn-desktop .body-content {
