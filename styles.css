@@ -434,6 +434,10 @@ footer .social-media::after {
     color: #fff;
   }
 
+  #tools li {
+    text-align: left;
+  }
+
   #nav-links li:hover {
     transform: translateY(-4px);
   }
@@ -510,12 +514,6 @@ footer .social-media::after {
     margin-bottom: 0;
   }
 
-  footer .social-media li:hover .icons {
-    background-color: #f55800;
-    color: #fff;
-    border: none;
-  }
-
   .social-media li:hover .icons {
     color: gray;
     border: 1px solid gray;
@@ -523,12 +521,14 @@ footer .social-media::after {
     padding: 4px 6px;
   }
 
-  #main .social-media {
-    flex-direction: column;
+  footer .social-media li:hover .icons {
+    background-color: #f55800;
+    color: #fff;
+    border: none;
   }
 
-  #tools li {
-    text-align: left;
+  #main .social-media {
+    flex-direction: column;
   }
 
   #main .social-media li {
