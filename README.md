@@ -15,10 +15,15 @@
 
 ## Live Demo (if available)
 
-- Gain access this awesom project by :
+- Gain access to this awesom project by :
 - heading over to "https://github.com/Progress2002/Portfolio" to view the Github repo.
 - Forking it to your Github account (You can as well "clone" it to your local machine )
 And there you have it all running in your local machine 😎
+
+### Links
+
+- Solution URL: [https://github.com/Progress2002/Portfolio.git]
+- Live Site URL: [https://progress2002.github.io/Portfolio/]
 
 
 ## Getting Started
@@ -40,7 +45,6 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 
 ### Deployment
-
 
 
 ## Author
