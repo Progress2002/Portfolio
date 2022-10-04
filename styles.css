@@ -325,7 +325,7 @@ ul > li {
   align-items: center;
 }
 
-#tools h4 {
+#tools .tools-title {
   color: #fff;
   font-style: normal;
   font-weight: 700;
@@ -342,23 +342,23 @@ ul > li {
   color: #fff;
 }
 
-.list-1 h4::before,
-.list-2 h4::before,
-.list-3 h4::before {
+.list-1 .tools-title::before,
+.list-2 .tools-title::before,
+.list-3 .tools-title::before {
   font-size: 12px;
   padding-right: 10px;
 }
 
-.list-1 h4::before {
+.list-1 .tools-title::before {
   content: "🔶";
   font-size: 18px;
 }
 
-.list-2 h4::before {
+.list-2 .tools-title::before {
   content: "🟧";
 }
 
-.list-3 h4::before {
+.list-3 .tools-title::before {
   content: "🟠";
 }
 
