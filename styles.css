@@ -231,11 +231,11 @@ ul > li {
 
 .button {
   font-style: normal;
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  background: #ff6b00;
+  background: #c45201;
   border: none;
   padding: 13px;
   cursor: pointer;
@@ -261,7 +261,7 @@ ul > li {
 }
 
 .button:enabled {
-  background-color: #f55800;
+  background: #c45201;
   color: #ffff;
 }
 
