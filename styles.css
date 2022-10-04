@@ -239,6 +239,7 @@ ul > li {
   border: none;
   padding: 13px;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn .button {
