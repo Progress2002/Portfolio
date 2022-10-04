@@ -231,11 +231,12 @@ ul > li {
 
 .button {
   font-style: normal;
-  font-weight: 700;
+
+  /* font-weight: 700; */
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  background: #ff6b00;
+  background: #c45201;
   border: none;
   padding: 13px;
   cursor: pointer;
@@ -261,7 +262,7 @@ ul > li {
 }
 
 .button:enabled {
-  background-color: #f55800;
+  background: #c45201;
   color: #ffff;
 }
 
@@ -325,7 +326,7 @@ ul > li {
   align-items: center;
 }
 
-#tools h4 {
+#tools .tools-title {
   color: #fff;
   font-style: normal;
   font-weight: 700;
@@ -342,23 +343,23 @@ ul > li {
   color: #fff;
 }
 
-.list-1 h4::before,
-.list-2 h4::before,
-.list-3 h4::before {
+.list-1 .tools-title::before,
+.list-2 .tools-title::before,
+.list-3 .tools-title::before {
   font-size: 12px;
   padding-right: 10px;
 }
 
-.list-1 h4::before {
+.list-1 .tools-title::before {
   content: "🔶";
   font-size: 18px;
 }
 
-.list-2 h4::before {
+.list-2 .tools-title::before {
   content: "🟧";
 }
 
-.list-3 h4::before {
+.list-3 .tools-title::before {
   content: "🟠";
 }
 
