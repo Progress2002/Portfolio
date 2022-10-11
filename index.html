@@ -14,38 +14,32 @@
 </head>
 <body>
     <header>
-        <div id="header_content">
-            <div id="logo">
-                <a href="#profile">Progress Eze</a>
-            </div>
-            <nav>
-                <i class="fa-solid fa-bars nav-icon"></i>
-                <ul id="nav-links">
-                    <li>
-                        <a href="#work-section">
+            <nav class="navbar">
+                <a href="#" class="nav-branding">Progress Eze</a>
+                <ul id="nav-links" class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#work-section" class="nav-link">
                             Portfolio
                         </a>
                     </li>
-                    <li>
-                        <a href="#about">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
                             About
                         </a>
                     </li>
-                    <li>
-                        <a href="#form">
+                    <li class="nav-item">
+                        <a href="#form" class="nav-link">
                             Contact
                         </a>
                     </li>
-                    <li>
-                        <a href="#mail" aria-label="Contact me via gmail account">
-                            <i class="fa-regular fa-envelope fa-2x"></i>
-                        </a>
-                    </li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
-        </div>
     </header>
-    
     <main id="main">
         <article id="main-article">
             <h1>Hey There. I’m Progress</h1>
@@ -255,12 +249,12 @@
             </ul>
         </div>
     </section>
-    <footer>
+    <footer id="form">
         <div class="footer-content">
             <h1 class="footer-body">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h1>
-            <form action="https://formspree.io/f/myyvwokv" method="post" id="form">
+            <form action="https://formspree.io/f/myyvwokv" method="post" >
                 <ul>
                     <li>
                         <label for="#name" class="visuallyhidden">Full name</label>
@@ -306,5 +300,6 @@
             </li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
