@@ -17,8 +17,8 @@ const projects = {
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     featured_image: {
-      mobile: './images/popup_mobile.png',
-      desktop: './images/popup_desktop.png',
+      mobile: './images/Img Placeholder.png',
+      desktop: './images/Img Placeholder (5).png',
     },
     technologies: {
       one: 'css',
@@ -36,8 +36,8 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featured_image: {
-      mobile: './images/popup_mobile.png',
-      desktop: './images/popup_desktop.png',
+      mobile: './images/Img Placeholder (2).png',
+      desktop: './images/Img Placeholder (2).png',
     },
     technologies: {
       one: 'html',
@@ -54,8 +54,8 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featured_image: {
-      mobile: './images/popup_mobile.png',
-      desktop: './images/popup_desktop.png',
+      mobile: './images/Img Placeholder (2).png',
+      desktop: './images/Img Placeholder (2).png',
     },
     technologies: {
       one: 'html',
@@ -72,8 +72,8 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featured_image: {
-      mobile: './images/popup_mobile.png',
-      desktop: './images/popup_desktop.png',
+      mobile: './images/Img Placeholder (2).png',
+      desktop: './images/Img Placeholder (2).png',
     },
     technologies: {
       one: 'html',
@@ -90,8 +90,8 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featured_image: {
-      mobile: './images/popup_mobile.png',
-      desktop: './images/popup_desktop.png',
+      mobile: './images/Img Placeholder (2).png',
+      desktop: './images/Img Placeholder (2).png',
     },
     technologies: {
       one: 'html',
@@ -108,8 +108,8 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featured_image: {
-      mobile: './images/popup_mobile.png',
-      desktop: './images/popup_desktop.png',
+      mobile: './images/Img Placeholder (2).png',
+      desktop: './images/Img Placeholder (2).png',
     },
     technologies: {
       one: 'html',
@@ -126,8 +126,8 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featured_image: {
-      mobile: './images/popup_mobile.png',
-      desktop: './images/popup_desktop.png',
+      mobile: './images/Img Placeholder (2).png',
+      desktop: './images/Img Placeholder (2).png',
     },
     technologies: {
       one: 'html',
@@ -141,6 +141,7 @@ const projects = {
   },
 };
 
+// Work section----------------
 const workSection = document.querySelector('#work-section');
 const work = document.createElement('div');
 work.setAttribute('id', 'work');
@@ -158,8 +159,8 @@ work.innerHTML = `
             <ul id="work-content">
                 <li class="project pr-1">
                     <div class="image">
-                        <img class="img-mobile" src="images/Img Placeholder.png" alt="Project-img">
-                        <img class="img-desktop" src="images/Img Placeholder (5).png" alt="">
+                        <img class="img-mobile" src="${projects.one.featured_image.mobile}" alt="Project-img">
+                        <img class="img-desktop" src="${projects.one.featured_image.desktop}" alt="project-img">
                     </div>
                     <div class="body">
                         <div class="body-content">
@@ -239,7 +240,7 @@ work.innerHTML = `
                         <p>${projects.six.description1}</p>
                         <ul>
                             <li>${projects.six.technologies.one}</li>
-                            <li>${projects.six.technologies.two}bootstrap</li>
+                            <li>${projects.six.technologies.two}</li>
                             <li>${projects.six.technologies.three}</li>
                         </ul>
                     </div>
@@ -263,24 +264,88 @@ work.innerHTML = `
                 </li>
             </ul>`;
 
-
-            const popupBtn = document.querySelectorAll('.popup-btn');
+// POPUP SECTION------------------------
+const popupBtn = document.querySelectorAll('.popup-btn');
 const popup = document.querySelector('#modal');
 const overlay = document.querySelector('#overlay');
-let arr = [];
 
 function openPopup() {
-  popup.classList.add('active')
-  overlay.classList.add('active')
+  popup.classList.add('active');
+  overlay.classList.add('active');
 }
 
-let array = []
+const popupContainer = document.createElement('div');
+popupContainer.classList.add('popup-container');
+popup.appendChild(popupContainer);
 
-popupBtn.forEach(btn => {
-  btn.addEventListener('click', (event) => {
-    openPopup();
-    arr.push(event.target.id);
-    let index = (arr.length) -1;
-    var id = arr[index];
-  })
-})
+popupContainer.innerHTML = `
+            <div class="popup-header">
+                <h2 class="popup-title">Multi Post Stories</h2>
+                <button class="close-popup">&times;</button>
+            </div>
+            <ul class="technologies">
+                <li class="list list-one"></li>
+                <li class="list list-two"></li>
+                <li class="list list-three"></li>
+                <li class="list list-four"></li>
+            </ul>
+            <div class="popup-content">
+                <div class="popup-image">
+                    <img class="popup-img" src="./images/popup_mobile.png" alt="project img">
+                </div>
+                <div>
+                    <p class="popup-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+                    </p>
+                    <div class="links">
+                        <a href="#" class="popup-link live-link button">See Live <span><img src="./images/Icon.png" alt="see_live icon"></span></a>
+                    <a href="#" class="popup-link source-link button">See Source <span><img src="./images/Vector.png" alt="Github_icon"></span></a>
+                    </div>
+                </div>
+            </div>
+`;
+// const closePopup = document.querySelector('.close-popup');
+
+// closePopup.addEventListener('click', () => {
+//   popup.classList.remove('active');
+//   overlay.classList.remove('active');
+// });
+
+// const popupTitle = document.querySelector('.popup-title');
+// const popupDescription = document.querySelector('.popup-description');
+// const popupListOne = document.querySelector('.list-one');
+// const popupListTwo = document.querySelector('.list-two');
+// const popupListThree = document.querySelector('.list-three');
+// const popupListFour = document.querySelector('.list-four');
+// const popupImg = document.querySelector('.popup-img');
+// const popupLiveLink = document.querySelector('.live-link');
+// const popupSourceLink = document.querySelector('.source-link');
+
+// popupBtn.forEach((btn) => {
+//   btn.addEventListener('click', (event) => {
+//     openPopup();
+//     const screenWidth = window.innerWidth;
+//     const btnId = event.target.id;
+//     popupTitle.innerHTML = projects[btnId].title;
+//     popupDescription.innerHTML = projects[btnId].description;
+//     popupListOne.innerHTML = projects[btnId].technologies.one;
+//     popupListTwo.innerHTML = projects[btnId].technologies.two;
+//     popupListThree.innerHTML = projects[btnId].technologies.three;
+//     popupLiveLink.setAttribute('href', projects[btnId].links.live);
+//     popupSourceLink.setAttribute('href', projects[btnId].links.source_code);
+
+//     if (screenWidth > 765) {
+//       popupImg.setAttribute('src', projects[btnId].featured_image.desktop);
+//     } else {
+//       popupImg.setAttribute('src', projects[btnId].featured_image.mobile);
+//     }
+
+//     const forthTechnology = 'four' in projects[btnId].technologies;
+//     if (!forthTechnology) {
+//       popupListFour.style.display = 'none';
+//     } else {
+//       popupListFour.style.display = 'block';
+//       popupListFour.innerHTML = projects[btnId].technologies.four;
+//     }
+//   });
+// });
