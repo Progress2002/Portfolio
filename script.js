@@ -304,48 +304,48 @@ popupContainer.innerHTML = `
                 </div>
             </div>
 `;
-// const closePopup = document.querySelector('.close-popup');
+const closePopup = document.querySelector('.close-popup');
 
-// closePopup.addEventListener('click', () => {
-//   popup.classList.remove('active');
-//   overlay.classList.remove('active');
-// });
+closePopup.addEventListener('click', () => {
+  popup.classList.remove('active');
+  overlay.classList.remove('active');
+});
 
-// const popupTitle = document.querySelector('.popup-title');
-// const popupDescription = document.querySelector('.popup-description');
-// const popupListOne = document.querySelector('.list-one');
-// const popupListTwo = document.querySelector('.list-two');
-// const popupListThree = document.querySelector('.list-three');
-// const popupListFour = document.querySelector('.list-four');
-// const popupImg = document.querySelector('.popup-img');
-// const popupLiveLink = document.querySelector('.live-link');
-// const popupSourceLink = document.querySelector('.source-link');
+const popupTitle = document.querySelector('.popup-title');
+const popupDescription = document.querySelector('.popup-description');
+const popupListOne = document.querySelector('.list-one');
+const popupListTwo = document.querySelector('.list-two');
+const popupListThree = document.querySelector('.list-three');
+const popupListFour = document.querySelector('.list-four');
+const popupImg = document.querySelector('.popup-img');
+const popupLiveLink = document.querySelector('.live-link');
+const popupSourceLink = document.querySelector('.source-link');
 
-// popupBtn.forEach((btn) => {
-//   btn.addEventListener('click', (event) => {
-//     openPopup();
-//     const screenWidth = window.innerWidth;
-//     const btnId = event.target.id;
-//     popupTitle.innerHTML = projects[btnId].title;
-//     popupDescription.innerHTML = projects[btnId].description;
-//     popupListOne.innerHTML = projects[btnId].technologies.one;
-//     popupListTwo.innerHTML = projects[btnId].technologies.two;
-//     popupListThree.innerHTML = projects[btnId].technologies.three;
-//     popupLiveLink.setAttribute('href', projects[btnId].links.live);
-//     popupSourceLink.setAttribute('href', projects[btnId].links.source_code);
+popupBtn.forEach((btn) => {
+  btn.addEventListener('click', (event) => {
+    openPopup();
+    const screenWidth = window.innerWidth;
+    const btnId = event.target.id;
+    popupTitle.innerHTML = projects[btnId].title;
+    popupDescription.innerHTML = projects[btnId].description;
+    popupListOne.innerHTML = projects[btnId].technologies.one;
+    popupListTwo.innerHTML = projects[btnId].technologies.two;
+    popupListThree.innerHTML = projects[btnId].technologies.three;
+    popupLiveLink.setAttribute('href', projects[btnId].links.live);
+    popupSourceLink.setAttribute('href', projects[btnId].links.source_code);
 
-//     if (screenWidth > 765) {
-//       popupImg.setAttribute('src', projects[btnId].featured_image.desktop);
-//     } else {
-//       popupImg.setAttribute('src', projects[btnId].featured_image.mobile);
-//     }
+    if (screenWidth > 765) {
+      popupImg.setAttribute('src', projects[btnId].featured_image.desktop);
+    } else {
+      popupImg.setAttribute('src', projects[btnId].featured_image.mobile);
+    }
 
-//     const forthTechnology = 'four' in projects[btnId].technologies;
-//     if (!forthTechnology) {
-//       popupListFour.style.display = 'none';
-//     } else {
-//       popupListFour.style.display = 'block';
-//       popupListFour.innerHTML = projects[btnId].technologies.four;
-//     }
-//   });
-// });
+    const forthTechnology = 'four' in projects[btnId].technologies;
+    if (!forthTechnology) {
+      popupListFour.style.display = 'none';
+    } else {
+      popupListFour.style.display = 'block';
+      popupListFour.innerHTML = projects[btnId].technologies.four;
+    }
+  });
+});
