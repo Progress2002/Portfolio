@@ -353,7 +353,7 @@ popupBtn.forEach((btn) => {
 // FORM VALIDATION-------------------
 const form = document.getElementById('getintouch');
 const error = document.getElementById('error');
-const { email } = form.elements;
+const email = document.getElementById('email');
 
 function checkUppercase(str) {
   for (let i = 0; i < str.length; i += 1) {
@@ -379,4 +379,19 @@ form.addEventListener('submit', (event) => {
   } else {
     form.submit();
   }
+});
+
+const contactForm = document.getElementById('form');
+const contactEmailField = document.getElementById('email');
+const contactUsernameField = document.getElementById('name');
+const contactMessageField = document.getElementById('textarea');
+
+
+
+contactForm.addEventListener('input', () => {
+  const username = contactUsernameField.value;
+  const email = contactEmailField.value;
+  const message = contactMessageField.value;
+
+  localStorage.setItem('contact-form', JSON.stringify({ username, email, message }));
 });
