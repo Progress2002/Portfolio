@@ -459,6 +459,11 @@ form textarea {
 
 ul > li > input {
   border-bottom: 1px solid #dbd8d7;
+  transition: all 0.3s linear;
+}
+
+#email.active {
+  border-bottom: 1px solid rgb(247, 2, 2);
 }
 
 form textarea {
@@ -468,6 +473,17 @@ form textarea {
 
 form .btn {
   text-align: center;
+}
+
+#error {
+  color: red;
+  font-size: 14px;
+  display: none;
+  margin-top: 5px;
+}
+
+#error.active {
+  display: block;
 }
 
 footer .social-media {
@@ -998,6 +1014,10 @@ footer .social-media::after {
 
   form {
     width: 65%;
+  }
+
+  #error.active {
+    display: inline-block;
   }
 
   footer .social-media::after {
