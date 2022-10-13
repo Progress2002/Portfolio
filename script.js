@@ -349,3 +349,34 @@ popupBtn.forEach((btn) => {
     }
   });
 });
+
+// FORM VALIDATION-------------------
+const form = document.getElementById('getintouch');
+const error = document.getElementById('error');
+const { email } = form.elements;
+
+function checkUppercase(str) {
+  for (let i = 0; i < str.length; i += 1) {
+    if (str.charAt(i) === str.charAt(i).toUpperCase() && str.charAt(i).match(/[a-z]/i)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+email.addEventListener('click', () => {
+  error.classList.remove('active');
+  email.classList.remove('active');
+});
+
+form.addEventListener('submit', (event) => {
+  const emailValue = email.value;
+  if (checkUppercase(emailValue)) {
+    event.preventDefault();
+    error.innerHTML = 'please provide a valid email in format: email@email.com';
+    error.classList.add('active');
+    email.classList.add('active');
+  } else {
+    form.submit();
+  }
+});
