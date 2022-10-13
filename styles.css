@@ -517,6 +517,7 @@ footer .social-media::after {
   text-align: auto;
   opacity: -5;
   z-index: -5;
+  transition: all 0.3s ease-out;
 }
 
 .popup.active {
@@ -608,8 +609,6 @@ footer .social-media::after {
 
 .popup .links {
   display: flex;
-
-  /* margin-right: 50px; */
   justify-content: space-between;
   width: 311px;
   margin: 10px auto;
@@ -634,6 +633,7 @@ footer .social-media::after {
   bottom: 0;
   z-index: -5;
   opacity: 0;
+  transition: all 0.3s ease-out;
 }
 
 #overlay.active {
