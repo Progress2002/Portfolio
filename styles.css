@@ -37,6 +37,7 @@ header {
   align-items: center;
   padding: 15px 42px;
   height: 75px;
+  position: relative;
 }
 
 .navbar a {
@@ -82,6 +83,16 @@ header {
   font-weight: 700;
   font-size: 1.5rem;
   transition: all 0.3s linear;
+  position: absolute;
+  top: 0;
+  left: 14px;
+}
+
+.logo-image .img {
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 12px;
 }
 
 .nav-branding.active {
@@ -94,6 +105,12 @@ header {
 
 .nav-link:hover {
   color: #ff6b00;
+}
+
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 24px;
 }
 
 .bar {
