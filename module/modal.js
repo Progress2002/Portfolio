@@ -1,16 +1,16 @@
-import { projects } from "./projectData.js";
-
+/* eslint-disable */
+import { projects } from './projectData.js';
 
 export const modal = () => {
   // POPUP SECTION------------------------
-  const popupBtn = document.querySelectorAll(".popup-btn");
-  const popup = document.querySelector("#modal");
-  const overlay = document.querySelector("#overlay");
+  const popupBtn = document.querySelectorAll('.popup-btn');
+  const popup = document.querySelector('#modal');
+  const overlay = document.querySelector('#overlay');
 
   const openPopup = () => {
-    popup.classList.add("active");
-    overlay.classList.add("active");
-  }
+    popup.classList.add('active');
+    overlay.classList.add('active');
+  };
 
   popup.innerHTML += `
     <div class="popup-container">
@@ -33,27 +33,25 @@ export const modal = () => {
               </div>
     </div>
   `;
-  const closePopupBtn = document.querySelector(".close-popup");
-  const technologies = document.querySelector(".technologies");
+  const closePopupBtn = document.querySelector('.close-popup');
+  const technologies = document.querySelector('.technologies');
 
   const closePopup = () => {
-    popup.classList.remove("active");
-    overlay.classList.remove("active");
-  }
+    popup.classList.remove('active');
+    overlay.classList.remove('active');
+  };
 
-  closePopupBtn.addEventListener("click", closePopup);
+  closePopupBtn.addEventListener('click', closePopup);
   overlay.addEventListener('click', closePopup);
 
-  
-
-  const popupTitle = document.querySelector(".popup-title");
-  const popupDescription = document.querySelector(".popup-description");
-  const popupImg = document.querySelector(".popup-img");
-  const popupLiveLink = document.querySelector(".live-link");
-  const popupSourceLink = document.querySelector(".source-link");
+  const popupTitle = document.querySelector('.popup-title');
+  const popupDescription = document.querySelector('.popup-description');
+  const popupImg = document.querySelector('.popup-img');
+  const popupLiveLink = document.querySelector('.live-link');
+  const popupSourceLink = document.querySelector('.source-link');
 
   popupBtn.forEach((btn) => {
-    btn.addEventListener("click", (event) => {
+    btn.addEventListener('click', (event) => {
       openPopup();
       const btnId = event.target.id;
       const technologyArr = projects[btnId].technologies;
@@ -61,10 +59,10 @@ export const modal = () => {
 
       popupTitle.innerHTML = projects[btnId].title;
       popupDescription.innerHTML = projects[btnId].description;
-      popupLiveLink.setAttribute("href", projects[btnId].links.live);
-      popupSourceLink.setAttribute("href", projects[btnId].links.source_code);
+      popupLiveLink.setAttribute('href', projects[btnId].links.live);
+      popupSourceLink.setAttribute('href', projects[btnId].links.source_code);
 
-      let techLength = technologies.innerHTML.length;
+      const techLength = technologies.innerHTML.length;
       technologyArr.forEach((technology) => {
         technologies.innerHTML += `
         <li class="list ">${technology}</li>
@@ -72,7 +70,7 @@ export const modal = () => {
       });
 
       if (techLength !== 0) {
-        technologies.innerHTML = "";
+        technologies.innerHTML = '';
         technologyArr.forEach((technology) => {
           technologies.innerHTML += `
           <li class="list ">${technology}</li>
@@ -81,10 +79,10 @@ export const modal = () => {
       }
 
       if (screenWidth > 765) {
-        popupImg.setAttribute("src", projects[btnId].featured_image.desktop);
+        popupImg.setAttribute('src', projects[btnId].featured_image.desktop);
       } else {
-        popupImg.setAttribute("src", projects[btnId].featured_image.mobile);
+        popupImg.setAttribute('src', projects[btnId].featured_image.mobile);
       }
     });
   });
-}
+};

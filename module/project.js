@@ -1,6 +1,7 @@
-import { projects } from "./projectData.js";
-import { workSection } from "./variables.js";
-import { modal } from "./modal.js";
+/* eslint-disable */
+import { projects } from './projectData.js';
+import { workSection } from './variables.js';
+import { modal } from './modal.js';
 
 export const PROJECT_SECTION = () => {
   // Worrk section --------
