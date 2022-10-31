@@ -1,8 +1,15 @@
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-const navLink = document.querySelectorAll('.nav-link');
-const navLogo = document.querySelector('.nav-branding');
-function toggleClassActive() {
+import {hamburger, navLink, navLogo, navMenu} from "./module/variables.js"
+import {PROJECT_SECTION} from "./module/project.js"
+import { FORM_VALIDATION } from "./module/form-validation.js"
+
+// display the work section created dynamically
+PROJECT_SECTION()
+
+// validate form inpute and store data in local storage
+FORM_VALIDATION()
+
+// Mobile nav menu functionality
+const toggleClassActive = () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
   navLogo.classList.toggle('active');
