@@ -579,12 +579,13 @@ footer .social-media::after {
 
 .technologies {
   display: flex;
-  margin: 0 19px 20px;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 0 0 20px 19px;
 }
 
 .technologies .list {
   padding: 12px;
-  margin-right: 15px;
   background: #fff;
   border: 1px solid #dfe1e6;
   font-family: 'Poppins', sans-serif;
