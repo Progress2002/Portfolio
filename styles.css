@@ -929,7 +929,11 @@ footer .social-media::after {
   }
 
   .bg-img ul {
-    width: 220px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: left;
   }
 
   .pr-2 {
