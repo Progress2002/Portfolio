@@ -101,6 +101,7 @@ export const PROJECT_SECTION = () => {
               <li>${projects.six.technologies[0]}</li>
               <li>${projects.six.technologies[1]}</li>
               <li>${projects.six.technologies[2]}</li>
+              <li>${projects.six.technologies[3]}</li>
           </ul>
           </div>
           <div class="btn">
