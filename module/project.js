@@ -19,7 +19,7 @@ export const PROJECT_SECTION = () => {
       <li class="project pr-1">
           <div class="image">
               <img class="img-mobile" src="${projects.one.featured_image.mobile}" alt="Project-img">
-              <img class="img-desktop" src="${projects.one.featured_image.desktop}" alt="project-img">
+              <img class="img-desktop" src="${projects.one.featured_image.mobile}" alt="project-img">
           </div>
           <div class="body">
               <div class="body-content">
