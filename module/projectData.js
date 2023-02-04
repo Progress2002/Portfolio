@@ -6,7 +6,7 @@ export const projects = {
       " LuxoPremier is a website that displays Tv-shows from a rest api. Users can like, and comment on their favorite Tv-shows and can get the details about a particular show, it also has a search feature that allows users to search for a show.",
     featured_image: {
       mobile: './images/LuxoPremier.png',
-      desktop: '../images/LuxoPremier.png',
+      desktop: './images/LuxoPremier.png',
     },
     technologies: [
       'HTML',
