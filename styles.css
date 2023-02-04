@@ -252,11 +252,6 @@ hr {
   text-align: center;
 }
 
-.bg-img {
-  min-height: 400px;
-  position: relative;
-}
-
 .bg-img h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -298,11 +293,12 @@ ul > li {
 .bg-img {
   padding-top: 0;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 0;
   transition: all 0.4s linear;
   background-size: 100% 100%;
+  min-height: 400px;
+  position: relative;
 }
 
 .bg-img .body-content {
@@ -974,10 +970,10 @@ footer .social-media::after {
   }
 
   @keyframes shadow {
-  50% {
-    transform: scale(1.1);
+    50% {
+      transform: scale(1.1);
+    }
   }
-}
 
   .btn-desktop .body-content {
     height: 60%;
