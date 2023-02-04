@@ -26,8 +26,8 @@ export const modal = () => {
                   <div>
                       <p class="popup-description"></p>
                       <div class="links">
-                          <a href="#" class="popup-link live-link button">See Live <span><img src="./images/Icon.png" alt="see_live icon"></span></a>
-                      <a href="#" class="popup-link source-link button">See Source <span><img src="./images/Vector.png" alt="Github_icon"></span></a>
+                          <a href="#" target="_blank" class="popup-link live-link button">See Live <span><img src="./images/Icon.png" alt="see_live icon"></span></a>
+                      <a href="#" target="_blank" class="popup-link source-link button">See Source <span><img src="./images/Vector.png" alt="Github_icon"></span></a>
                       </div>
                   </div>
               </div>

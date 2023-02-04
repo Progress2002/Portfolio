@@ -1,22 +1,24 @@
 /* eslint-disable */
 export const projects = {
   one: {
-    title: 'Multi-Post Stories',
+    title: 'LuxoPremier',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      " LuxoPremier is a website that displays Tv-shows from a rest api. Users can like, and comment on their favorite Tv-shows and can get the details about a particular show, it also has a search feature that allows users to search for a show.",
     featured_image: {
-      mobile: './images/Img Placeholder.png',
-      desktop: './images/Img Placeholder (5).png',
+      mobile: './images/LuxoPremier.png',
+      desktop: '../images/LuxoPremier.png',
     },
     technologies: [
-      'css',
-      'html',
-      'bootstrap',
-      'Ruby',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Webpack',
+      'REST API',
+      'Jest'
     ],
     links: {
-      live: '#',
-      source_code: '#',
+      live: 'https://progress2002.github.io/LuxoPremier/dist/',
+      source_code: 'https://github.com/Progress2002/LuxoPremier.git',
     },
   },
   two: {
@@ -121,23 +123,23 @@ export const projects = {
     },
   },
   seven: {
-    title: 'Profesional Art Printing Data',
+    title: 'Multi-step form',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      "This is a solution to the Multi-step form challenge on Frontend Mentor. It verifies users' input and grants them access to a new form page where they could purchase different plans, after which they are provided with a summary of all their selections and could confirm the purchase or make changes.",
     description1:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      "A signup form that verifies users' input and grants them access to multiple choice of item subscription and a preview of all selection made.",
     featured_image: {
-      mobile: './images/Img Placeholder (2).png',
-      desktop: './images/Img Placeholder (2).png',
+      mobile: './images/multi-step\ form.png',
+      desktop: './images/multi-step\ form.png',
     },
     technologies: [
-      'html',
-      'bootstrap',
-      'Ruby',
+      'HTML',
+      'SCSS',
+      'JavaScript',
     ],
     links: {
-      live: '#',
-      source_code: '#',
+      live: 'https://progress2002.github.io/Multi-step-form-/',
+      source_code: 'https://github.com/Progress2002/Multi-step-form-.git',
     },
   },
 };
