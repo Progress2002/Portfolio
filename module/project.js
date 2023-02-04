@@ -4,7 +4,7 @@ import { workSection } from './variables.js';
 import { modal } from './modal.js';
 
 export const PROJECT_SECTION = () => {
-  // Worrk section --------
+  // Work section --------
   workSection.innerHTML += `
     <div id="work">
       <div class="work-title">
@@ -30,6 +30,8 @@ export const PROJECT_SECTION = () => {
                   <li>${projects.one.technologies[1]}</li>
                   <li>${projects.one.technologies[2]}</li>
                   <li>${projects.one.technologies[3]}</li>
+                  <li>${projects.one.technologies[4]}</li>
+                  <li>${projects.one.technologies[5]}</li>
               </ul>
               </div>
               <div class="btn">
