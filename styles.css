@@ -356,28 +356,28 @@ ul > li {
 }
 
 .pr-2 {
-  position: relative;
-  background-image: url("images/Img\ Placeholder\ \(1\).png");
+  background-image: url("./images/Carbooker.png");
 }
 
 .pr-3 {
-  background-image: url("images/Img\ Placeholder\ \(3\).png");
+  background-image: url("./images/countries.png");
 }
 
 .pr-4 {
-  background-image: url("images/Img\ Placeholder\ \(4\).png");
+  background-image: url("./images/multi-step\ form.png");
 }
 
 .pr-5 {
-  background-image: url("images/Img\ Placeholder\ \(1\).png");
+  background-image: url("./images/Keeper.png");
 }
 
 .pr-6 {
-  background-image: url("./images/ToDoApp2.png");
+  position: relative;
+  background-image: url("./images/easybank.png");
 }
 
 .pr-7 {
-  background-image: url("./images/multi-step\ form.png");
+  background-image: url("./images/ToDoApp2.png");
 }
 
 .bg-img li {
@@ -992,7 +992,7 @@ footer .social-media::after {
     height: 60%;
     padding: 20px 20px 10px;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.3s linear;
   }
