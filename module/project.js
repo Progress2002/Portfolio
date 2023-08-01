@@ -24,7 +24,7 @@ export const PROJECT_SECTION = () => {
           <div class="body">
               <div class="body-content">
                   <h3>${projects.one.title}</h3>
-                  <p>${projects.one.description}</p>
+                  <p>${projects.one.description.substring(0, 160) + "..."}</p>
                   <ul>
                   <li>${projects.one.technologies[0]}</li>
                   <li>${projects.one.technologies[1]}</li>
@@ -41,8 +41,8 @@ export const PROJECT_SECTION = () => {
       </li>
       <li class="project pr-2 bg-img btn-desktop">
           <div class="body-content">
-              <h3>${projects.two.title}</h3>
-              <p>${projects.two.description1}</p>
+          <h3>${projects.two.title}</h3>
+          <p>${projects.two.description1.substring(0, 70) + "..."}</p>
               <ul>
                   <li>${projects.two.technologies[0]}</li>
                   <li>${projects.two.technologies[1]}</li>
@@ -56,7 +56,7 @@ export const PROJECT_SECTION = () => {
       <li class="project pr-3 bg-img btn-desktop">
           <div class="body-content">
               <h3>${projects.three.title}</h3>
-              <p>${projects.three.description1}</p>
+              <p>${projects.three.description1.substring(0, 70) + "..."}</p>
               <ul>
                   <li>${projects.three.technologies[0]}</li>
                   <li>${projects.three.technologies[1]}</li>
@@ -70,7 +70,7 @@ export const PROJECT_SECTION = () => {
       <li class="project pr-4 bg-img btn-desktop">
           <div class="body-content">
               <h3>${projects.four.title}</h3>
-              <p>${projects.four.description1}</p>
+              <p>${projects.four.description1.substring(0, 70) + "..."}</p>
               <ul>
                   <li>${projects.four.technologies[0]}</li>
                   <li>${projects.four.technologies[1]}</li>
@@ -84,7 +84,7 @@ export const PROJECT_SECTION = () => {
       <li class="project pr-5 bg-img btn-desktop">
           <div class="body-content">
               <h3>${projects.five.title}</h3>
-              <p>${projects.five.description1}</p>
+              <p>${projects.five.description1.substring(0, 70) + "..."}</p>
               <ul>
                   <li>${projects.five.technologies[0]}</li>
                   <li>${projects.five.technologies[1]}</li>
@@ -98,7 +98,7 @@ export const PROJECT_SECTION = () => {
       <li class="project pr-6 bg-img btn-desktop">
           <div class="body-content">
               <h3>${projects.six.title}</h3>
-              <p>${projects.six.description1}</p>
+              <p>${projects.six.description1.substring(0, 70) + "..."}</p>
               <ul>
               <li>${projects.six.technologies[0]}</li>
               <li>${projects.six.technologies[1]}</li>
@@ -113,7 +113,7 @@ export const PROJECT_SECTION = () => {
       <li class="project pr-7 bg-img btn-desktop">
           <div class="body-content">
               <h3>${projects.seven.title}</h3>
-              <p>${projects.seven.description1}</p>
+              <p>${projects.seven.description1.substring(0, 70) + "..."}</p>
               <ul>
                   <li>${projects.seven.technologies[0]}</li>
                   <li>${projects.seven.technologies[1]}</li>
