@@ -169,8 +169,8 @@ h1 {
 }
 
 .project p {
-  font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.2;
+  font-size: 18px;
 }
 
 .pr-1 p {
@@ -256,8 +256,8 @@ hr {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .pr-1 h3 {
@@ -273,7 +273,6 @@ hr {
   display: flex;
   margin-top: 10px;
   width: 85%;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -297,7 +296,7 @@ ul > li {
   padding-bottom: 0;
   transition: all 0.4s linear;
   background-size: 100% 100%;
-  min-height: 400px;
+  height: 300px;
   position: relative;
 }
 
@@ -557,9 +556,13 @@ footer .social-media::after {
 
 .popup {
   position: fixed;
-  top: 4%;
+  top: 8%;
   left: 3%;
   width: 93%;
+  transform: translate(-50%, -50%);
+  height: 640px;
+  overflow-y: auto;
+
   background-color: #fff;
   text-align: auto;
   animation: slideOUT 0.4s linear both;
@@ -839,6 +842,11 @@ footer .social-media::after {
     color: #f4f5f7;
   }
 
+  .project p {
+    line-height: 1.2;
+    font-size: 15px;
+  }
+
   footer .social-media {
     margin-bottom: 0;
   }
@@ -895,7 +903,7 @@ footer .social-media::after {
   }
 
   .horizontal-line {
-    width: 1070px;
+    width: 70%;
   }
 
   hr {
@@ -913,7 +921,7 @@ footer .social-media::after {
     grid-column: 1/4;
     display: flex;
     column-gap: 20px;
-    height: 450px;
+    height: fit-content;
     margin-bottom: 10px;
   }
 
@@ -951,16 +959,21 @@ footer .social-media::after {
   }
 
   .project ul {
-    width: 55%;
+    width: 100%;
   }
 
   .bg-img {
     padding-top: 60px;
     margin: 4px;
     padding-bottom: 0;
-    height: 450px;
+    min-height: 280px;
     transition: all 0.7s linear;
     background-size: 100% 100%;
+  }
+
+  .bg-img h3 {
+    font-size: 20px;
+    margin-bottom: 0;
   }
 
   .bg-img:hover {
@@ -1002,10 +1015,8 @@ footer .social-media::after {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 5px;
     justify-content: left;
-    position: absolute;
-    bottom: 20px;
   }
 
   .btn-desktop {
@@ -1093,9 +1104,10 @@ footer .social-media::after {
   }
 
   .popup {
-    top: 9%;
+    top: 8%;
     left: 10%;
-    width: 1156px;
+    width: 80%;
+    height: 600px;
   }
 
   .popup-header {
@@ -1115,7 +1127,8 @@ footer .social-media::after {
     flex-direction: row;
     width: 97%;
     margin: auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
   }
 
   .popup-image {
@@ -1137,7 +1150,7 @@ footer .social-media::after {
     width: 311px;
     margin: 10px auto;
     position: absolute;
-    bottom: 10px;
+    bottom: 17px;
   }
 
   .popup-link {
