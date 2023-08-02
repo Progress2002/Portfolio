@@ -144,13 +144,13 @@ header {
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 40px;
   font-family: 'Crete Round', sans-serif;
   color: #ff6b00;
   margin-top: 0;
   width: 330px;
   margin-bottom: 5px;
-  line-height: 64px;
+  line-height: 1;
 }
 
 .work-title h2 {
@@ -561,7 +561,7 @@ footer .social-media::after {
   width: 93%;
   transform: translate(-50%, -50%);
   height: 640px;
-  overflow-y: auto;
+  overflow-y: scroll;
 
   background-color: #fff;
   text-align: auto;
@@ -817,10 +817,10 @@ footer .social-media::after {
   }
 
   h1 {
-    font-size: 72px;
+    font-size: 50px;
     width: 400px;
     font-weight: 400;
-    line-height: 82px;
+    line-height: 1;
   }
 
   .work-title h2 {
