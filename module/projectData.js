@@ -24,21 +24,21 @@ export const projects = {
   two: {
     title: 'CarBooker',
     description:
-      "Cabooker is a user-friendly and efficient car booking application that empowers users to reserve their preferred vehicles seamlessly. Whether you need a car for a business trip, vacation, or simply for your daily commute, Cabooker offers a diverse selection of cars to suit your needs.",
+      "This is a solution to the Space tourism website challenge on Frontend Mentor [`https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3`]. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
     description1:
-      "Cabooker is a user-friendly and efficient car booking application that empowers users to reserve their preferred vehicles seamlessly. Whether you need a car for a business trip, vacation, or simply for your daily commute, Cabooker offers a diverse selection of cars to suit your needs.",
+      "This is a solution to the Space tourism website challenge on Frontend Mentor [`https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3`]. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
     featured_image: {
-      mobile: './images/Carbooker.png',
-      desktop: './images/Carbooker.png',
+      mobile: './images/space-tourism.png',
+      desktop: './images/space-tourism.png',
     },
     technologies: [
-      'React/Redux',
+      'React',
       'CSS3',
-      'Ruby on Rails',
+      'TailwindCSS'
     ],
     links: {
-      live: '#',
-      source_code: '#',
+      live: 'https://space-tourism-lozc.onrender.com/',
+      source_code: 'https://github.com/Progress2002/space-tourism.git',
     },
   },
   three: {
