@@ -22,11 +22,11 @@ export const projects = {
     },
   },
   two: {
-    title: 'CarBooker',
+    title: 'Space Tourism',
     description:
-      "This is a solution to the Space tourism website challenge on Frontend Mentor [`https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3`]. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+      "Experience the marvel of space exploration with Space Tourism, a stunning website meticulously crafted using ReactJS. Immerse yourself in a seamless navigation experience, where you can effortlessly journey between pages and explore an array of captivating space destinations. Meet the intrepid space crew and brilliant engineers who make these voyages possible. Embark on an extraordinary virtual space odyssey like never before.",
     description1:
-      "This is a solution to the Space tourism website challenge on Frontend Mentor [`https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3`]. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+      "Experience the marvel of space exploration with Space Tourism, a stunning website meticulously crafted using ReactJS. Immerse yourself in a seamless navigation experience, where you can effortlessly journey between pages and explore an array of captivating space destinations. Meet the intrepid space crew and brilliant engineers who make these voyages possible. Embark on an extraordinary virtual space odyssey like never before.",
     featured_image: {
       mobile: './images/space-tourism.png',
       desktop: './images/space-tourism.png',
@@ -42,7 +42,7 @@ export const projects = {
     },
   },
   three: {
-    title: '🌏Countries',
+    title: '🌏 Countries',
     description:
       "In this web application, users are able to see all the countries in the world on the homepage, filter countries by region, click on a country to see more information, and search for a country.",
     description1:
