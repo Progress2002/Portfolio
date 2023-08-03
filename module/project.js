@@ -9,7 +9,7 @@ export const PROJECT_SECTION = () => {
     <div id="work">
       <div class="work-title">
       <div class="text">
-          <h2>My Recent Works</h2>
+          <h2>My <span>Recent</span> Works</h2>
       </div>
       <div class="horizontal-line">
           <hr>
