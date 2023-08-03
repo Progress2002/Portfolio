@@ -143,15 +143,34 @@ header {
   background-position: bottom  right;
 }
 
-h1 {
-  font-size: 40px;
+h1,
+h1 span {
+  font-size: 35px;
   font-family: 'Crete Round', sans-serif;
-  color: #ff6b00;
+  color: #fff;
   margin-top: 0;
   width: 330px;
-  margin-bottom: 5px;
-  line-height: 1;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
+
+h1 span {
+  font-weight: bold;
+}
+
+h1 span,
+h2 span {
+  color: #ff6b00;
+  margin-bottom: 10px;
+  border-bottom: 5px solid #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+}
+
+h2 span {
+  font-size: 30px;
+  font-weight: 400px;
+}
+
 
 .work-title h2 {
   font-family: 'Crete Round', sans-serif;
@@ -162,10 +181,18 @@ h1 {
 }
 
 #main h2 {
-  color: #fff5e1;
+  color: hsla(0,0%,83%,.6);
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 33px;
+  line-height: 1.5;
+}
+
+.deescription-span {
+  font-size: 20px;
+  display: block;
+  line-height: 1.5;
+  color: #ff6b00;
 }
 
 .project p {
@@ -186,9 +213,14 @@ h3,
 #main p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
+  font-size: 17px;
+  line-height: 1.5;
+  color: hsla(0,0%,83%,.9);
+}
+
+#main p span {
+  color: #ff6b00;
+  font-weight: bolder;
 }
 
 .social-media {
@@ -417,6 +449,28 @@ ul > li {
 
 .about-description {
   padding: 0 25px;
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+    color: hsl(0 0% 83%/var(--tw-text-opacity));
+}
+
+.about-intro,
+.about-intro span {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100%/var(--tw-text-opacity));
+  font-size: 20px;
+  line-height: 1.75rem;
+}
+
+.about-intro {
+  margin: 20px 0 20px 30px;
+}
+
+.about-intro span {
+  color: #f55800;
+  font-weight: 400;
 }
 
 .about-btn {
@@ -835,11 +889,11 @@ footer .social-media::after {
   }
 
   #main-article .description {
-    width: 550px;
+    width: 50%;
     font-family: inherit;
     font-size: 20px;
     line-height: 32px;
-    color: #f4f5f7;
+    color: hsla(0,0%,83%,.6);
   }
 
   .project p {
@@ -1053,12 +1107,21 @@ footer .social-media::after {
     text-align: left;
   }
 
+  .about-intro,
+  .about-intro span {
+    font-size: 20px;
+  }
+
+  .about-intro {
+    margin-left: 0;
+  }
+
   #about .about-description {
     padding-left: 0;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
-    width: 590px;
+    width: 60%;
     margin-bottom: 30px;
   }
 
