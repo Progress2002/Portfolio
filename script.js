@@ -15,21 +15,9 @@ const toggleClassActive = () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
   navLogo.classList.toggle('active');
-  navLink.forEach((element) => {
-    element.classList.toggle('mobile-nav-link');
-  })
 };
-const HandleMobileNav =() => {
-  navLink.forEach((element) => {
-    if (element.classList.contains('mobile-nav-link')) {
-      element.addEventListener('click', toggleClassActive); 
-    }else {
-      navLogo.classList.remove('active')
-    }
-  });
-}
 
 hamburger.addEventListener('click', toggleClassActive);
 navLink.forEach((element) => {
-  element.addEventListener('click', HandleMobileNav)
+  element.addEventListener('click', toggleClassActive)
 });

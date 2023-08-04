@@ -782,6 +782,10 @@ footer .social-media::after {
     padding-left: 90px;
   }
 
+  .nav-branding.active {
+    opacity: 1;
+  }
+
   .nav-menu {
     display: flex;
     margin: 0;
