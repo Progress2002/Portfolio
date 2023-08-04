@@ -24,5 +24,7 @@ hamburger.addEventListener('click', toggleClassActive);
 navLink.forEach((element) => {
   if (element.classList.includes('mobile-nav-link')) {
     element.addEventListener('click', toggleClassActive); 
+  }else {
+    navLogo.classList.remove('active')
   }
 });
