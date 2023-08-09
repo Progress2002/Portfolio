@@ -16,7 +16,8 @@ const toggleClassActive = () => {
   navMenu.classList.toggle('active');
   navLogo.classList.toggle('active');
 };
+
 hamburger.addEventListener('click', toggleClassActive);
 navLink.forEach((element) => {
-  element.addEventListener('click', toggleClassActive);
+  element.addEventListener('click', toggleClassActive)
 });
