@@ -102,6 +102,27 @@ export const projects = {
     },
   },
   six: {
+    title: 'To-Do App',
+    description:
+    "The React.js Todo App is a user-friendly task management tool designed to streamline your daily tasks. With an intuitive interface and dynamic features, it enables users to effortlessly add, edit, and mark tasks as complete. The app's responsive design ensures seamless usability across devices, while its powerful React foundation ensures fast and efficient performance. Stay organized and boost productivity with the React.js Todo App.",
+    description1:
+      "The React.js Todo App is a user-friendly task management tool designed to streamline your daily tasks. With an intuitive interface and dynamic features, it enables users to effortlessly add, edit, and mark tasks as complete. The app's responsive design ensures seamless usability across devices, while its powerful React foundation ensures fast and efficient performance. Stay organized and boost productivity with the React.js Todo App.",
+    featured_image: {
+      mobile: './images/mobile\ \(2\).png',
+      desktop: './images/mobile\ \(2\).png',
+    },
+    technologies: [
+      'React',
+      'CSS',
+      'JavaScript',
+      'ReduxToolkit'
+    ],
+    links: {
+      live: 'https://todo-app-qjve.onrender.com/',
+      source_code: 'https://github.com/Progress2002/Todo-app-v2.git',
+    },
+  },
+  seven: {
     title: 'Easybank landing page',
     description:
       "This is a solution to the Easybank landing page challenge on Frontend Mentor Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
@@ -120,27 +141,6 @@ export const projects = {
     links: {
       live: 'https://easybank-spt9.onrender.com/',
       source_code: 'https://github.com/Progress2002/easybank.git',
-    },
-  },
-  seven: {
-    title: 'To Do App',
-    description:
-    "A To-Do list application that allows users to keep record of activity they intend doing. This app allows users to mark activites as completed and also edith alredy assigned activitie.",
-    description1:
-      "A To-Do list application that allows users to keep record of activity they intend doing. This app allows users to mark activity as completed and also edith alredy assigned activitie.",
-    featured_image: {
-      mobile: './images/ToDoApp2.png',
-      desktop: './images/ToDoApp2.png',
-    },
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Webpack'
-    ],
-    links: {
-      live: 'https://progress2002.github.io/To-Do-List/dist/',
-      source_code: 'https://github.com/Progress2002/To-Do-List.git',
     },
   },
 };

@@ -404,13 +404,14 @@ ul > li {
 }
 
 .pr-6 {
+  background-image: url("./images/mobile\ \(2\).png");
+}
+
+.pr-7 {
   position: relative;
   background-image: url("./images/easybank.png");
 }
 
-.pr-7 {
-  background-image: url("./images/ToDoApp2.png");
-}
 
 .bg-img li {
   color: #fff;
